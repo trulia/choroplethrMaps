@@ -7,3 +7,6 @@ Author: Ari Lamstein <arilamstein@gmail.com>
 Maintainer: Ari Lamstein <arilamstein@gmail.com>
 Description: Contains 3 maps. 1) US States 2) US Counties 3) Countries of the world.
 License: BSD_3_clause + file LICENSE
+URL: https://github.com/trulia/choroplethrMaps/,
+    https://groups.google.com/forum/#!forum/choroplethr
+BugReports: https://github.com/trulia/choroplethrMaps/issues
