@@ -11,7 +11,7 @@ Master: [![Build Status](https://travis-ci.org/trulia/choroplethrMaps.png?branch
 To install the latest stable release type the following from an R console:
 
 ```
-install.packages("choroplethr")
+install.packages("choroplethrMaps")
 ```
 
 To install the development version use the `devtools` package:
