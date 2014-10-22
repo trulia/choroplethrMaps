@@ -1,0 +1,16 @@
+{
+    "contents" : "#' A data.frame containing election results from the 2012 US Presidential election.  \n#'\n#' @name df_president\n#' @usage data(df_president)\n#' @docType data\n#' @references Taken from \\url{http://www.fec.gov/pubrec/fe2012/federalelections2012.shtml} on 3/15/2014. \n#' @keywords data\nNULL\n\n#' A data.frame containing population estimates for US States in 2012.   \n#'\n#' @name df_pop_state\n#' @docType data\n#' @references Taken from the US American Community Survey (ACS) 5 year estimates.\n#' \n#' @keywords data\n#' @usage data(df_pop_state)\nNULL\n\n#' A data.frame containing all US presdiential election results from 1789 to 2012\n#' \n#' Legend: \n#' \\itemize{\n#'  \\item R = Republican\n#'  \\item D = Democratic\n#'  \\item DR = Democratic-Republican\n#'  \\item W = Whig\n#'  \\item F = Federalist\n#'  \\item GW = George Washington\n#'  \\item NR = National Republican\n#'  \\item SD = Southern Democrat\n#'  \\item PR = Progressive\n#'  \\item AI = American Independent\n#'  \\item SR = States' Rights\n#'  \\item PO = Populist\n#'  \\item CU = Constitutional Union\n#'  \\item I = Independent\n#'  \\item ND = Northern Democrat\n#'  \\item KN = Know Nothing\n#'  \\item AM = Anti-Masonic\n#'  \\item N = Nullifier\n#'  \\item SP = Split evenly\n#' }\n#' @docType data\n#' @references Taken from \\url{http://en.wikipedia.org/wiki/List_of_United_States_presidential_election_results_by_state} 3/20/2014.\n#' @keywords data\n#' @name df_president_ts\n#' @usage data(df_president_ts)\nNULL",
+    "created" : 1414015697293.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1382341663",
+    "id" : "85F3A949",
+    "lastKnownWriteTime" : 1414015712,
+    "path" : "~/code/R/choroplethr/R/state_data.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

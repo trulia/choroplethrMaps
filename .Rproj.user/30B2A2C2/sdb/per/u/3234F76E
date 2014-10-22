@@ -1,0 +1,17 @@
+{
+    "contents" : "library(choroplethr)\n\ndata(country.map)\nsave(country.map, file=\"data/country.map.rdata\")\n\ndata(country.names)\nsave(country.names, file=\"data/country.names.rdata\")\n\ndata(county.map)\nsave(county.map, file=\"data/county.map.rdata\")\n\ndata(county.names)    \nsave(county.names, file=\"data/county.names.rdata\")\n\ndata(state.map)\nsave(state.map, file=\"data/state.map.rdata\")\n\ndata(state.names)    \nsave(state.names, file=\"data/state.names.rdata\")\n\n\n",
+    "created" : 1414014707613.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1093511949",
+    "id" : "3234F76E",
+    "lastKnownWriteTime" : 4374955616,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

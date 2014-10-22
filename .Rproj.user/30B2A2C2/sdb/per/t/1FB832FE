@@ -1,0 +1,16 @@
+{
+    "contents" : "#' A data.frame containing population estimates for Countries in 2012.   \n#'\n#' @name df_pop_country\n#' @docType data\n#' @references Taken from the WDI package with code SP.POP.TOTL for year 2012.\n#' \n#' @keywords data\n#' @usage data(df_pop_country)\nNULL",
+    "created" : 1414015755705.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3625705389",
+    "id" : "1FB832FE",
+    "lastKnownWriteTime" : 1414015792,
+    "path" : "~/code/R/choroplethr/R/country_data.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

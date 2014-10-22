@@ -1,0 +1,16 @@
+{
+    "contents" : "#' A data.frame containing population estimates for US Counties in 2012.   \n#'\n#' @name df_pop_county\n#' @docType data\n#' @references Taken from the US American Community Survey (ACS) 5 year estimates.\n#' \n#' @keywords data\n#' @usage data(df_pop_county)\nNULL",
+    "created" : 1414015722663.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3047755056",
+    "id" : "A1BD66C3",
+    "lastKnownWriteTime" : 1414015736,
+    "path" : "~/code/R/choroplethr/R/county_data.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
