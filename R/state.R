@@ -14,12 +14,12 @@
 #' The resolutions is 20m (20m = 1:20,000,000). 
 NULL
 
-#' A data.frame consisting of all 50 state names plus their postal code abbreviations and FIPS codes.
+#' A data.frame consisting of each region on the map state.map plus their postal code abbreviations and FIPS codes.
 #' 
 #' choroplethr requires you to use the naming convention in the "region" column (i.e. all lowercase, full name).
 #' 
 #' @docType data
-#' @name state.names
-#' @usage data(state.names)
+#' @name state.regions
+#' @usage data(state.regions)
 #' @references Taken from http://www.epa.gov/envirofw/html/codes/state.html
 NULL

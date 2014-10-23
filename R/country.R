@@ -14,9 +14,9 @@
 #' @usage data(country.map)
 NULL
 
-#' Names of all counties on the country.map data.frame. A data.frame that includes both English names and
+#' Names of all regions on the country.map data.frame. A data.frame that includes both English names and
 #' their iso2c equivalents.
-#' @name country.names
-#' @usage data(country.names)
+#' @name country.regions
+#' @usage data(country.regions)
 #' @docType data
 NULL

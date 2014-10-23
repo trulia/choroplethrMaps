@@ -15,7 +15,7 @@
 #' The resolutions is 20m (20m = 1:20,000,000). 
 NULL
 
-#' A data.frame consisting of the name of each county in the map county.map as well as their FIPS codes and state names.
+#' A data.frame consisting of the name of each region in the map county.map as well as their FIPS codes and state names.
 #' 
 #' choroplethr requires you to use the naming convention in the "region" column (i.e. the numeric version of 
 #' the FIPS code - no leading zero).
@@ -23,6 +23,6 @@ NULL
 #' @seealso ?county.map
 #'  
 #' @docType data
-#' @name county.names
-#' @usage data(county.names)
+#' @name county.regions
+#' @usage data(county.regions)
 NULL
