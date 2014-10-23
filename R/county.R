@@ -1,4 +1,3 @@
-
 #' Map of the counties of each of the 50 US states plus the district of columbia.
 #' 
 #' A data.frame which contains a map of all 50 US States plus 
@@ -7,8 +6,6 @@
 #' Puerto Rico 2) remove islands off of Alaska that
 #' crossed the antimeridian 3) renamed the county "Dona Ana" (which is properly written with a tilde over the
 #' first "n") to "Dona Ana" because R CMD check emits a warning if data contains non-ASCII characters 4) some columns were added for convenience.
-#'
-#' Note that because of (2) above, county FIPS code 2016 (Aleutians West Census Area, Alaska) is not a part of this map.
 #'
 #' @docType data
 #' @name county.map
