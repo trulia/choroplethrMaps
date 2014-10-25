@@ -2,12 +2,18 @@
 \docType{data}
 \name{state.regions}
 \alias{state.regions}
-\title{A data.frame consisting of each region on the map state.map plus their postal code abbreviations and FIPS codes.}
+\title{A data.frame consisting of each region on the map state.map plus their postal code
+abbreviations and FIPS codes.}
 \usage{
 data(state.regions)
 }
 \description{
-choroplethr requires you to use the naming convention in the "region" column (i.e. all lowercase, full name).
+choroplethr requires you to use the naming convention in the "region" column
+(i.e. all lowercase, full name).
+}
+\examples{
+data(state.regions)
+head(state.regions)
 }
 \references{
 Taken from http://www.epa.gov/envirofw/html/codes/state.html

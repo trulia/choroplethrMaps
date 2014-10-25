@@ -11,4 +11,8 @@ data(country.regions)
 Names of all regions on the country.map data.frame. A data.frame that includes both English names and
 their iso2c equivalents.
 }
+\examples{
+data(country.regions)
+head(country.regions)
+}
 

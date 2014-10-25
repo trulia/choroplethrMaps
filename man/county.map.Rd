@@ -14,6 +14,15 @@ Puerto Rico 2) remove islands off of Alaska that
 crossed the antimeridian 3) renamed the county "Dona Ana" (which is properly written with a tilde over the
 first "n") to "Dona Ana" because R CMD check emits a warning if data contains non-ASCII characters 4) some columns were added for convenience.
 }
+\examples{
+\dontrun{
+# render the map with ggplot2
+library(ggplot2)
+
+data(county.map)
+ggplot(county.map, aes(long, lat, group=group)) + geom_polygon()
+}
+}
 \references{
 Taken from the US Census 2010
 Cartographic Boundary shapefiles page (https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html) in May 2014.

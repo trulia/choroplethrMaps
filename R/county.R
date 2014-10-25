@@ -13,6 +13,14 @@
 #' @references Taken from the US Census 2010
 #' Cartographic Boundary shapefiles page (https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html) in May 2014.
 #' The resolutions is 20m (20m = 1:20,000,000). 
+#' @examples
+#' \dontrun{
+#' # render the map with ggplot2
+#' library(ggplot2)
+#' 
+#' data(county.map)
+#' ggplot(county.map, aes(long, lat, group=group)) + geom_polygon()
+#' }
 NULL
 
 #' A data.frame consisting of the name of each region in the map county.map as well as their FIPS codes and state names.
@@ -25,4 +33,7 @@ NULL
 #' @docType data
 #' @name county.regions
 #' @usage data(county.regions)
+#' @examples
+#' data(county.regions)
+#' head(county.regions)
 NULL

@@ -10,6 +10,10 @@ data(county.regions)
 choroplethr requires you to use the naming convention in the "region" column (i.e. the numeric version of
 the FIPS code - no leading zero).
 }
+\examples{
+data(county.regions)
+head(county.regions)
+}
 \seealso{
 ?county.map
 }

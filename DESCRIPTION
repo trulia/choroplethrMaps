@@ -11,3 +11,5 @@ License: BSD_3_clause + file LICENSE
 URL: https://github.com/trulia/choroplethrMaps/,
     https://groups.google.com/forum/#!forum/choroplethr
 BugReports: https://github.com/trulia/choroplethrMaps/issues
+Suggests:
+    ggplot2

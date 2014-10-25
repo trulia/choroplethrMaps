@@ -12,6 +12,14 @@
 #' @docType data
 #' @name country.map
 #' @usage data(country.map)
+#' @examples
+#' \dontrun{
+#' # render the map with ggplot2
+#' library(ggplot2)
+#'
+#' data(country.map)
+#' ggplot(country.map, aes(long, lat, group=group)) + geom_polygon()
+#' }
 NULL
 
 #' Names of all regions on the country.map data.frame. A data.frame that includes both English names and
@@ -19,4 +27,7 @@ NULL
 #' @name country.regions
 #' @usage data(country.regions)
 #' @docType data
+#' @examples
+#' data(country.regions)
+#' head(country.regions)
 NULL

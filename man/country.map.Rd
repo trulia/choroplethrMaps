@@ -16,6 +16,15 @@ column "sovereignt".
 Note that due to the resolution of the map (1:110m, or 1 cm=1,100 km), small countries are not
 represented on this map.  See ?country.names for a list of all countries represented on the map.
 }
+\examples{
+\dontrun{
+# render the map with ggplot2
+library(ggplot2)
+
+data(country.map)
+ggplot(country.map, aes(long, lat, group=group)) + geom_polygon()
+}
+}
 \references{
 Taken from http://www.naturalearthdata.com/downloads/110m-cultural-vectors/
 }
