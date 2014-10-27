@@ -1,0 +1,17 @@
+#' An admin1 (state/province) level map of every country in the world
+#' 
+#' This data.frame corresponds to version 3.0.0 of the "Admin 1 - States, Provinces" map from naturalearthdata.com
+#'  
+#' @references Taken from http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/
+#' @docType data
+#' @name world.admin1.df
+#' @usage data(world.admin1.df)
+#' @examples
+#' \dontrun{
+#' # render the map with ggplot2
+#' library(ggplot2)
+#'
+#' data(world.admin1.df)
+#' ggplot(world.admin1.df, aes(long, lat, group=group)) + geom_polygon()
+#' }
+NULL
