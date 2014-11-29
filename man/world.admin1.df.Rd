@@ -2,23 +2,32 @@
 \docType{data}
 \name{world.admin1.df}
 \alias{world.admin1.df}
-\title{An admin1 (state/province) level map of every country in the world}
+\title{An Administrative Level 1 map of every country in the world}
 \usage{
 data(world.admin1.df)
 }
 \description{
-This data.frame corresponds to version 3.0.0 of the "Admin 1 - States, Provinces" map from naturalearthdata.com
+The country is in the column "admin". The admin1 name is in the column "name".
+}
+\note{
+This map is too large to efficiently render with ggplot2. You should subset it by country before
+attempting to render. Please see the examples.
 }
 \examples{
-\dontrun{
-# render the map with ggplot2
-library(ggplot2)
+# list all countries in the map
+unique(world.admin1.df$admin)
 
-data(world.admin1.df)
-ggplot(world.admin1.df, aes(long, lat, group=group)) + geom_polygon()
-}
+# subset the map to include only Japan - use the "admin" column for this
+japan.df = world.admin1.df[world.admin1.df$admin == "Japan", ]
+
+# show the names of all admin1 units in Japan
+unique(japan.df$name)
+
+# render the Japan map
+ggplot(japan.df, aes(long, lat, group=group)) + geom_polygon()
 }
 \references{
-Taken from http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/
+Taken from http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/.
+The wikipedia page on "Administrative division": http://en.wikipedia.org/wiki/Administrative_division
 }
 
