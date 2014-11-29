@@ -12,9 +12,11 @@ render_admin1(country.name = "Japan")
 Uses the map ?admin1.map.
 }
 \examples{
+\dontrun{
 render_admin1("Japan")
 
 render_admin1("Canada")
+}
 }
 \seealso{
 admin1.map

@@ -14,6 +14,7 @@ if (base::getRversion() >= "2.15.1") {
 #' attempting to render. Please see the examples.
 #' @examples
 #' 
+#' \dontrun{
 #' library(ggplot2)
 #' data(admin1.map)
 #' 
@@ -28,6 +29,7 @@ if (base::getRversion() >= "2.15.1") {
 #' 
 #' # render the Japan map
 #' ggplot(japan.map, aes(long, lat, group=group)) + geom_polygon() 
+#' }
 NULL
 
 #' Render an Administrative Level 1 map for a specified country
@@ -39,9 +41,11 @@ NULL
 #' 
 #' @examples
 #' 
+#' \dontrun{
 #' render_admin1("Japan")
 #' 
 #' render_admin1("Canada")
+#' }
 #' @importFrom ggplot2 ggplot aes geom_polygon ggtitle
 #' @export
 render_admin1 = function(country.name="Japan")

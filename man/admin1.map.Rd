@@ -14,6 +14,7 @@ This map is too large to efficiently render with ggplot2. You should subset it b
 attempting to render. Please see the examples.
 }
 \examples{
+\dontrun{
 library(ggplot2)
 data(admin1.map)
 
@@ -28,6 +29,7 @@ unique(japan.map$name)
 
 # render the Japan map
 ggplot(japan.map, aes(long, lat, group=group)) + geom_polygon()
+}
 }
 \references{
 Taken from http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/.
