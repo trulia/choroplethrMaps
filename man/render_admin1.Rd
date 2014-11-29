@@ -5,8 +5,11 @@
 \usage{
 render_admin1(country.name = "Japan")
 }
+\arguments{
+\item{country.name}{The name of the country you want to render.}
+}
 \description{
-Uses the map ?world.admin1.df.
+Uses the map ?admin1.map.
 }
 \examples{
 render_admin1("Japan")
@@ -14,6 +17,6 @@ render_admin1("Japan")
 render_admin1("Canada")
 }
 \seealso{
-world.admin1.df
+admin1.map
 }
 
