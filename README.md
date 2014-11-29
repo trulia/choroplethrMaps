@@ -1,10 +1,11 @@
 # choroplethrMaps
 Master: [![Build Status](https://travis-ci.org/trulia/choroplethrMaps.png?branch=master)](https://travis-ci.org/trulia/choroplethrMaps)
 
-`choroplethrMaps` is an R package that contains 3 maps used by the [choroplethr](https://github.com/trulia/choroplethr) package. The maps are:
+`choroplethrMaps` is an R package that contains 4 maps used by the [choroplethr](https://github.com/trulia/choroplethr) package. The maps are:
   * US States
   * US Counties
-  * Countries of the world.
+  * Countries of the world
+  * Administrative 1 Boundaries (e.g. state/province boundaries) for all countries in the world 
 
 ## Installation
 
