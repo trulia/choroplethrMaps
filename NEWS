@@ -1,0 +1,5 @@
+choroplethrMaps 1.1
+----------------------------------------------------------------
+
+-Add data.frame admin1.map. This data.frame contains a map of Administrative 1 bondaries (i.e. states, provinces) of all countries in the world. See ?admin1.map for provenance
+-Add function ?render_admin1, which takes a country name and renders an Admin 1 map of that country using ggplot2.

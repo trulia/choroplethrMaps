@@ -5,8 +5,8 @@ Version: 1.0
 Date: 2014-10-22
 Author: Ari Lamstein <arilamstein@gmail.com>
 Maintainer: Ari Lamstein <arilamstein@gmail.com>
-Description: Contains 3 maps. 1) US States 2) US Counties 3) Countries of the
-    world.
+Description: Contains 4 maps. 1) US States 2) US Counties 3) Countries of the
+    world 4) An Admin1 (i.e. state/province) map of all countries in the world
 License: BSD_3_clause + file LICENSE
 URL: https://github.com/trulia/choroplethrMaps/,
     https://groups.google.com/forum/#!forum/choroplethr
