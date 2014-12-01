@@ -94,5 +94,6 @@ get_admin1_map = function(country.name="japan")
   data(admin1.regions, package="choroplethrMaps", envir=environment())
   stopifnot(country.name %in% unique(admin1.regions$country))
   
+  data(admin1.map, package="choroplethrMaps", envir=environment())
   admin1.map[admin1.map$admin==country.name,]  
 }
