@@ -5,7 +5,8 @@ if (base::getRversion() >= "2.15.1") {
 #' 
 #' The country is in the column "admin". The admin1 region name is in the column "name".
 #'  
-#' @references Taken from http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/.
+#' @references Taken from http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/. 
+#' This is version 3.0.0 of the map and is considered to be beta.
 #' The wikipedia page on "Administrative division": http://en.wikipedia.org/wiki/Administrative_division
 #' @docType data
 #' @name admin1.map

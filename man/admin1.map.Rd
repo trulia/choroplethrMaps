@@ -33,6 +33,7 @@ ggplot(japan.map, aes(long, lat, group=group)) + geom_polygon()
 }
 \references{
 Taken from http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/.
+This is version 3.0.0 of the map and is considered to be beta.
 The wikipedia page on "Administrative division": http://en.wikipedia.org/wiki/Administrative_division
 }
 
