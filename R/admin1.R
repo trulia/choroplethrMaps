@@ -3,7 +3,7 @@ if (base::getRversion() >= "2.15.1") {
 }
 #' An Administrative Level 1 map of every country in the world
 #' 
-#' The country is in the column "admin". The admin1 region name is in the column "name".
+#' The country is in the column "admin". The admin1 region name is in the column "region".
 #'  
 #' @references Taken from http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/. 
 #' This is version 3.0.0 of the map and is considered to be beta.
@@ -26,7 +26,7 @@ if (base::getRversion() >= "2.15.1") {
 #' japan.map = admin1.map[admin1.map$admin == "Japan", ]
 #'
 #' # show the names of all admin1 units in Japan
-#' unique(japan.map$name) 
+#' unique(japan.map$region) 
 #' 
 #' # render the Japan map
 #' ggplot(japan.map, aes(long, lat, group=group)) + geom_polygon() 

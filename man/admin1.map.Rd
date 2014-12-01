@@ -7,7 +7,7 @@
 data(admin1.map)
 }
 \description{
-The country is in the column "admin". The admin1 region name is in the column "name".
+The country is in the column "admin". The admin1 region name is in the column "region".
 }
 \note{
 This map is too large to efficiently render with ggplot2. You should subset it by country before
@@ -25,7 +25,7 @@ unique(admin1.map$admin)
 japan.map = admin1.map[admin1.map$admin == "Japan", ]
 
 # show the names of all admin1 units in Japan
-unique(japan.map$name)
+unique(japan.map$region)
 
 # render the Japan map
 ggplot(japan.map, aes(long, lat, group=group)) + geom_polygon()
