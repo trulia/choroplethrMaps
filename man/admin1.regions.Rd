@@ -2,12 +2,12 @@
 \docType{data}
 \name{admin1.regions}
 \alias{admin1.regions}
-\title{Names of all (country, admin1) pairs on the admin1.map data.frame.}
+\title{Names of all (country, region) pairs on the admin1.map data.frame. Here "region" means "Administrative Level 1 Region".}
 \usage{
 data(admin1.regions)
 }
 \description{
-Names of all (country, admin1) pairs on the admin1.map data.frame.
+Names of all (country, region) pairs on the admin1.map data.frame. Here "region" means "Administrative Level 1 Region".
 }
 \examples{
 data(admin1.regions)

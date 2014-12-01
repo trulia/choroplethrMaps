@@ -20,7 +20,7 @@ if (base::getRversion() >= "2.15.1") {
 #' @seealso \code{\link{admin1.regions}}, \code{\link{get_admin1_regions}}, \code{\link{admin1_map}} and \code{\link{get_admin1_map}}
 NULL
 
-#' Names of all (country, admin1) pairs on the admin1.map data.frame. 
+#' Names of all (country, region) pairs on the admin1.map data.frame. Here "region" means "Administrative Level 1 Region".
 #' @name admin1.regions
 #' @usage data(admin1.regions)
 #' @docType data
