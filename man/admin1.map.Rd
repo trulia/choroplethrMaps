@@ -7,33 +7,22 @@
 data(admin1.map)
 }
 \description{
-The country is in the column "admin". The admin1 region name is in the column "region".
+"Administration Level 1" is the generic term for the largest subnational administrative unit of a country. This
+unit has different names depending on the country: for example, "state" in the USA and
+"prefecture" in Japan. In this data.frame the country name is in the column
+"admin" and the admin1 region name is in the column "region". Rather than working with this
+object directly, consider using the helper functions listed below.
 }
 \note{
-This map is too large to efficiently render with ggplot2. You should subset it by country before
-attempting to render. Please see the examples.
-}
-\examples{
-\dontrun{
-library(ggplot2)
-data(admin1.map)
-
-# list all countries in the map
-unique(admin1.map$admin)
-
-# subset the map to include only Japan - use the "admin" column for this
-japan.map = admin1.map[admin1.map$admin == "Japan", ]
-
-# show the names of all admin1 units in Japan
-unique(japan.map$region)
-
-# render the Japan map
-ggplot(japan.map, aes(long, lat, group=group)) + geom_polygon()
-}
+This map is too large to efficiently render by itself with ggplot2. You should subset it by country before
+attempting to render. Please see the helper functions.
 }
 \references{
 Taken from http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/.
 This is version 3.0.0 of the map and is considered to be beta.
 The wikipedia page on "Administrative division": http://en.wikipedia.org/wiki/Administrative_division
+}
+\seealso{
+\code{\link{admin1.regions}}, \code{\link{get_admin1_regions}}, \code{\link{admin1_map}} and \code{\link{get_admin1_map}}
 }
 

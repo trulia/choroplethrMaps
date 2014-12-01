@@ -3,7 +3,11 @@ if (base::getRversion() >= "2.15.1") {
 }
 #' An Administrative Level 1 map of every country in the world
 #' 
-#' The country is in the column "admin". The admin1 region name is in the column "region".
+#' "Administration Level 1" is the generic term for the largest subnational administrative unit of a country. This
+#' unit has different names depending on the country: for example, "state" in the USA and 
+#' "prefecture" in Japan. In this data.frame the country name is in the column 
+#' "admin" and the admin1 region name is in the column "region". Rather than working with this 
+#' object directly, consider using the helper functions listed below.
 #'  
 #' @references Taken from http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/. 
 #' This is version 3.0.0 of the map and is considered to be beta.
@@ -11,26 +15,9 @@ if (base::getRversion() >= "2.15.1") {
 #' @docType data
 #' @name admin1.map
 #' @usage data(admin1.map)
-#' @note This map is too large to efficiently render with ggplot2. You should subset it by country before
-#' attempting to render. Please see the examples.
-#' @examples
-#' 
-#' \dontrun{
-#' library(ggplot2)
-#' data(admin1.map)
-#' 
-#' # list all countries in the map
-#' unique(admin1.map$admin)
-#' 
-#' # subset the map to include only Japan - use the "admin" column for this
-#' japan.map = admin1.map[admin1.map$admin == "Japan", ]
-#'
-#' # show the names of all admin1 units in Japan
-#' unique(japan.map$region) 
-#' 
-#' # render the Japan map
-#' ggplot(japan.map, aes(long, lat, group=group)) + geom_polygon() 
-#' }
+#' @note This map is too large to efficiently render by itself with ggplot2. You should subset it by country before
+#' attempting to render. Please see the helper functions.
+#' @seealso \code{\link{admin1.regions}}, \code{\link{get_admin1_regions}}, \code{\link{admin1_map}} and \code{\link{get_admin1_map}}
 NULL
 
 #' Names of all (country, admin1) pairs on the admin1.map data.frame. 
@@ -40,6 +27,7 @@ NULL
 #' @examples
 #' data(admin1.regions)
 #' head(admin1.regions)
+#' @seealso \code{\link{admin1.map}}, \code{\link{get_admin1_regions}}, \code{\link{admin1_map}} and \code{\link{get_admin1_map}}
 NULL
 
 #' Render an Administrative Level 1 map for a specified country
@@ -47,18 +35,18 @@ NULL
 #' Uses the map ?admin1.map.
 #' 
 #' @param country.name The name of the country you want to render.  
-#' @seealso admin1.map
 #' 
 #' @examples
 #' 
 #' \dontrun{
-#' render_admin1("Japan")
+#' admin1_map("Japan")
 #' 
-#' render_admin1("Canada")
+#' admin1_map("Canada")
 #' }
 #' @importFrom ggplot2 ggplot aes geom_polygon ggtitle
 #' @export
-render_admin1 = function(country.name="Japan")
+#' @seealso \code{\link{admin1.map}}, \code{\link{admin1.regions}}, \code{\link{get_admin1_regions}}, and \code{\link{get_admin1_map}}
+admin1_map = function(country.name="Japan")
 {
   data(admin1.map, package="choroplethrMaps", envir=environment())
   stopifnot(country.name %in% unique(admin1.map$admin))
@@ -70,18 +58,41 @@ render_admin1 = function(country.name="Japan")
     ggtitle(title)
 }
 
-#' Get all admin1 regions names for a given country
+#' Get all admin1 region names for a given country
 #' 
 #' @param country.name The name of the country you want the admin1 region names of.
 #' @export
 #' @examples
 #' get_admin1_regions("Japan")
 #' get_admin1_regions("Canada")
-#' @seealso admin1.map admin1.regions render_admin1
+#' @seealso \code{\link{admin1.map}}, \code{\link{admin1.regions}}, \code{\link{admin1_map}} and \code{\link{get_admin1_map}}
 get_admin1_regions = function(country.name="Japan")
 {
   data(admin1.regions, package="choroplethrMaps", envir=environment())
   stopifnot(country.name %in% unique(admin1.regions$country))
   
   admin1.regions[admin1.regions$country==country.name,]  
+}
+
+#' Get an admin1 map for a country
+#' 
+#' Uses ?admin1.map. See ?admin1.regions for how countries are spelled in this map.
+#' 
+#' @param country.name The name of the country you want the admin1 map for.
+#' @export
+#' @examples
+#' \dontrun{
+#'  japan.map = get_admin1_map("Japan")
+#' 
+#'  ggplot(japan.map, aes(long, lat, group=group)) + 
+#'    geom_polygon() +
+#'    ggtitle("An admin1 map of Japan")
+#' }
+#' @seealso \code{\link{admin1.map}}, \code{\link{admin1.regions}}, \code{\link{get_admin1_regions}} and \code{\link{admin1_map}}
+get_admin1_map = function(country.name="Japan")
+{
+  data(admin1.regions, package="choroplethrMaps", envir=environment())
+  stopifnot(country.name %in% unique(admin1.regions$country))
+  
+  admin1.map[admin1.map$admin==country.name,]  
 }
