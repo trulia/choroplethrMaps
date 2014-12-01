@@ -3,7 +3,7 @@
 \alias{admin1_map}
 \title{Render an Administrative Level 1 map for a specified country}
 \usage{
-admin1_map(country.name = "Japan")
+admin1_map(country.name = "japan")
 }
 \arguments{
 \item{country.name}{The name of the country you want to render.}
@@ -13,9 +13,9 @@ Uses the map ?admin1.map.
 }
 \examples{
 \dontrun{
-admin1_map("Japan")
+admin1_map("japan")
 
-admin1_map("Canada")
+admin1_map("canada")
 }
 }
 \seealso{

@@ -3,7 +3,7 @@
 \alias{get_admin1_map}
 \title{Get an admin1 map for a country}
 \usage{
-get_admin1_map(country.name = "Japan")
+get_admin1_map(country.name = "japan")
 }
 \arguments{
 \item{country.name}{The name of the country you want the admin1 map for.}
@@ -13,7 +13,7 @@ Uses ?admin1.map. See ?admin1.regions for how countries are spelled in this map.
 }
 \examples{
 \dontrun{
- japan.map = get_admin1_map("Japan")
+ japan.map = get_admin1_map("japan")
 
  ggplot(japan.map, aes(long, lat, group=group)) +
    geom_polygon() +

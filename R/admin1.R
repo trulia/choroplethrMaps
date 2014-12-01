@@ -39,14 +39,14 @@ NULL
 #' @examples
 #' 
 #' \dontrun{
-#' admin1_map("Japan")
+#' admin1_map("japan")
 #' 
-#' admin1_map("Canada")
+#' admin1_map("canada")
 #' }
 #' @importFrom ggplot2 ggplot aes geom_polygon ggtitle
 #' @export
 #' @seealso \code{\link{admin1.map}}, \code{\link{admin1.regions}}, \code{\link{get_admin1_regions}}, and \code{\link{get_admin1_map}}
-admin1_map = function(country.name="Japan")
+admin1_map = function(country.name="japan")
 {
   data(admin1.map, package="choroplethrMaps", envir=environment())
   stopifnot(country.name %in% unique(admin1.map$admin))
@@ -63,10 +63,10 @@ admin1_map = function(country.name="Japan")
 #' @param country.name The name of the country you want the admin1 region names of.
 #' @export
 #' @examples
-#' get_admin1_regions("Japan")
-#' get_admin1_regions("Canada")
+#' get_admin1_regions("japan")
+#' get_admin1_regions("canada")
 #' @seealso \code{\link{admin1.map}}, \code{\link{admin1.regions}}, \code{\link{admin1_map}} and \code{\link{get_admin1_map}}
-get_admin1_regions = function(country.name="Japan")
+get_admin1_regions = function(country.name="japan")
 {
   data(admin1.regions, package="choroplethrMaps", envir=environment())
   stopifnot(country.name %in% unique(admin1.regions$country))
@@ -82,14 +82,14 @@ get_admin1_regions = function(country.name="Japan")
 #' @export
 #' @examples
 #' \dontrun{
-#'  japan.map = get_admin1_map("Japan")
+#'  japan.map = get_admin1_map("japan")
 #' 
 #'  ggplot(japan.map, aes(long, lat, group=group)) + 
 #'    geom_polygon() +
 #'    ggtitle("An admin1 map of Japan")
 #' }
 #' @seealso \code{\link{admin1.map}}, \code{\link{admin1.regions}}, \code{\link{get_admin1_regions}} and \code{\link{admin1_map}}
-get_admin1_map = function(country.name="Japan")
+get_admin1_map = function(country.name="japan")
 {
   data(admin1.regions, package="choroplethrMaps", envir=environment())
   stopifnot(country.name %in% unique(admin1.regions$country))
