@@ -46,7 +46,7 @@ NULL
 #' @importFrom ggplot2 ggplot aes geom_polygon ggtitle
 #' @export
 #' @seealso \code{\link{admin1.map}}, \code{\link{admin1.regions}}, \code{\link{get_admin1_regions}}, and \code{\link{get_admin1_map}}
-admin1_map = function(country.name="japan")
+admin1_map = function()
 {
   data(admin1.map, package="choroplethrMaps", envir=environment())
   stopifnot(country.name %in% unique(admin1.map$admin))
