@@ -58,6 +58,18 @@ admin1_map = function(country.name="japan")
     ggtitle(title)
 }
 
+#' Get all countries on the admin1 map
+#' 
+#' Uses ?admin1.regions
+#' @export
+#' @examples 
+#' get_admin1_countries()
+get_admin1_countries = function()
+{
+  data(admin1.regions, package="choroplethrMaps", envir=environment())
+  sort(unique(admin1.regions$country))
+}
+
 #' Get all admin1 region names for a given country
 #' 
 #' @param country.name The name of the country you want the admin1 region names of.
