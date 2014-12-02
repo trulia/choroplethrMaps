@@ -3,7 +3,7 @@
 \alias{get_admin1_regions}
 \title{Get all admin1 region names for a given country}
 \usage{
-get_admin1_regions(country.name = "japan")
+get_admin1_regions(country.name)
 }
 \arguments{
 \item{country.name}{The name of the country you want the admin1 region names of.}

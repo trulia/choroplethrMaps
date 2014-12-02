@@ -46,7 +46,7 @@ NULL
 #' @importFrom ggplot2 ggplot aes geom_polygon ggtitle
 #' @export
 #' @seealso \code{\link{admin1.map}}, \code{\link{admin1.regions}}, \code{\link{get_admin1_regions}}, and \code{\link{get_admin1_map}}
-admin1_map = function()
+admin1_map = function(country.name)
 {
   data(admin1.map, package="choroplethrMaps", envir=environment())
   stopifnot(country.name %in% unique(admin1.map$admin))
@@ -78,7 +78,7 @@ get_admin1_countries = function()
 #' get_admin1_regions("japan")
 #' get_admin1_regions("canada")
 #' @seealso \code{\link{admin1.map}}, \code{\link{admin1.regions}}, \code{\link{admin1_map}} and \code{\link{get_admin1_map}}
-get_admin1_regions = function()
+get_admin1_regions = function(country.name)
 {
   data(admin1.regions, package="choroplethrMaps", envir=environment())
   stopifnot(country.name %in% unique(admin1.regions$country))
@@ -101,7 +101,7 @@ get_admin1_regions = function()
 #'    ggtitle("An admin1 map of Japan")
 #' }
 #' @seealso \code{\link{admin1.map}}, \code{\link{admin1.regions}}, \code{\link{get_admin1_regions}} and \code{\link{admin1_map}}
-get_admin1_map = function()
+get_admin1_map = function(country.name)
 {
   data(admin1.regions, package="choroplethrMaps", envir=environment())
   stopifnot(country.name %in% unique(admin1.regions$country))

@@ -3,7 +3,7 @@
 \alias{get_admin1_map}
 \title{Get an admin1 map for a country}
 \usage{
-get_admin1_map(country.name = "japan")
+get_admin1_map(country.name)
 }
 \arguments{
 \item{country.name}{The name of the country you want the admin1 map for.}

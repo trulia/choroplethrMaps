@@ -3,7 +3,7 @@
 \alias{admin1_map}
 \title{Render an Administrative Level 1 map for a specified country}
 \usage{
-admin1_map(country.name = "japan")
+admin1_map(country.name)
 }
 \arguments{
 \item{country.name}{The name of the country you want to render.}
